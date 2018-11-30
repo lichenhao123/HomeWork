@@ -18,7 +18,7 @@ public class Crawler {
            //抓取网页
            Utils.fetch(TIEBA_URL).ifPresent(html -> {
                Matcher matcher = pattern.matcher(html);
-               //匹配图
+               //匹配图片
                while (matcher.find()) {
                    String imageURL = matcher.group(1);
                    //提交线程

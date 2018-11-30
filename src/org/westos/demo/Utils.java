@@ -27,7 +27,7 @@ public class Utils {
         }
     }
 
-    //图片地址，下载图片，存储目录
+    //图片地址，下载图片并且存储目录
     public static void download(String imageURL, String savePrefix) {
         try {
             URLConnection conn = new URL(imageURL).openConnection();
