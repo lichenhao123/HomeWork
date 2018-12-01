@@ -13,7 +13,7 @@ public class Crawler {
     public static final String SAVE_PREFIX = "E:\\爬虫图片\\";
 
     public static void main(String[] args) {
-           //创建线程，下载图片
+           //创建线程下载图片
            ExecutorService es = Executors.newFixedThreadPool(10);
            //抓取网页
            Utils.fetch(TIEBA_URL).ifPresent(html -> {
